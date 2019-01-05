@@ -4,10 +4,10 @@ namespace Bitty\Tests\View;
 
 use Bitty\View\AbstractView;
 use Bitty\View\ViewInterface;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
-class AbstractViewTest extends PHPUnit_Framework_TestCase
+class AbstractViewTest extends TestCase
 {
     /**
      * @var AbstractView
