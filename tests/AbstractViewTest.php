@@ -4,42 +4,43 @@ namespace Bitty\Tests\View;
 
 use Bitty\View\AbstractView;
 use Bitty\View\ViewInterface;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 
-class AbstractViewTest extends PHPUnit_Framework_TestCase
+class AbstractViewTest extends TestCase
 {
     /**
-     * @var AbstractView
+     * @var AbstractView|MockObject
      */
     protected $fixture = null;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
         $this->fixture = $this->getMockForAbstractClass(AbstractView::class);
     }
 
-    public function testInstanceOf()
+    public function testInstanceOf(): void
     {
-        $this->assertInstanceOf(ViewInterface::class, $this->fixture);
+        self::assertInstanceOf(ViewInterface::class, $this->fixture);
     }
 
-    public function testRenderResponse()
+    public function testRenderResponse(): void
     {
         $html     = uniqid('html');
         $template = uniqid('template');
         $data     = [uniqid('param')];
 
-        $this->fixture->expects($this->once())
+        $this->fixture->expects(self::once())
             ->method('render')
             ->with($template, $data)
             ->willReturn($html);
 
         $actual = $this->fixture->renderResponse($template, $data);
 
-        $this->assertInstanceOf(ResponseInterface::class, $actual);
-        $this->assertEquals($html, (string) $actual->getBody());
+        self::assertInstanceOf(ResponseInterface::class, $actual);
+        self::assertEquals($html, (string) $actual->getBody());
     }
 }
