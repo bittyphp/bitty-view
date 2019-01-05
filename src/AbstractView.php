@@ -11,7 +11,7 @@ abstract class AbstractView implements ViewInterface
     /**
      * {@inheritDoc}
      */
-    abstract public function render($template, $data = []);
+    abstract public function render(string $template, $data = []): string;
 
     /**
      * Renders an HTTP response using the template and given data.
@@ -21,7 +21,7 @@ abstract class AbstractView implements ViewInterface
      *
      * @return ResponseInterface
      */
-    public function renderResponse($template, $data = [])
+    public function renderResponse(string $template, $data = []): ResponseInterface
     {
         return new Response($this->render($template, $data));
     }
