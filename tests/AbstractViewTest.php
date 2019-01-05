@@ -27,11 +27,15 @@ class AbstractViewTest extends TestCase
         self::assertInstanceOf(ViewInterface::class, $this->fixture);
     }
 
-    public function testRenderResponse(): void
+    /**
+     * @param mixed $data
+     *
+     * @dataProvider sampleRenderData
+     */
+    public function testRenderResponse($data): void
     {
         $html     = uniqid('html');
         $template = uniqid('template');
-        $data     = [uniqid('param')];
 
         $this->fixture->expects(self::once())
             ->method('render')
@@ -42,5 +46,18 @@ class AbstractViewTest extends TestCase
 
         self::assertInstanceOf(ResponseInterface::class, $actual);
         self::assertEquals($html, (string) $actual->getBody());
+    }
+
+    public function sampleRenderData(): array
+    {
+        return [
+            'array' => [[uniqid('param')]],
+            'object' => [(object) [uniqid('param') => uniqid('value')]],
+            'null' => [null],
+            'false' => [false],
+            'true' => [true],
+            'int' => [rand()],
+            'string' => [uniqid('a')],
+        ];
     }
 }

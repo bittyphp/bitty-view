@@ -12,5 +12,5 @@ interface ViewInterface
      *
      * @return string
      */
-    public function render($template, $data = []);
+    public function render(string $template, $data = []): string;
 }
