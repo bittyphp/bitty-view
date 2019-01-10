@@ -12,11 +12,14 @@ php:
 
 before_script:
   # Install packages
-  - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install -n
+  - COMPOSER_MEMORY_LIMIT=-1 travis_retry composer install -n ;
 
 script:
   # Test all the things
   - vendor/bin/phing
+
+after_script:
   # Track code coverage
-  - echo $CODACY_PROJECT_TOKEN
-  - vendor/bin/codacycoverage clover build/coverage/xml
+  - if [[ -n "$CODACY_PROJECT_TOKEN" ]]; then
+        vendor/bin/codacycoverage clover build/coverage/xml ;
+    fi
