@@ -17,7 +17,5 @@ before_script:
 script:
   # Test all the things
   - vendor/bin/phing
-
-after_script:
   # Track code coverage
   - vendor/bin/codacycoverage clover build/coverage/xml
