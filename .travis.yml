@@ -18,5 +18,5 @@ script:
   # Test all the things
   - vendor/bin/phing
   # Track code coverage
-  - echo "codacy: $CODACY_PROJECT_TOKEN"
+  - echo $CODACY_PROJECT_TOKEN
   - vendor/bin/codacycoverage clover build/coverage/xml
