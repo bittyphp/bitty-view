@@ -22,6 +22,7 @@ $ composer require bittyphp/bitty-view
 The following implementations are available. Pick and choose whichever one(s) you would like:
 
 - [Twig](https://github.com/bittyphp/bitty-twig)
+- [Latte](https://github.com/bittyphp/view-latte)
 - [Mustache](https://github.com/bittyphp/bitty-mustache)
 
 ### Twig
@@ -31,9 +32,16 @@ The following implementations are available. Pick and choose whichever one(s) yo
 $ composer require bittyphp/bitty-twig
 ```
 
+### Latte
+
+[Latte](https://latte.nette.org/), from the makers of the [Nette](https://nette.org/) framework,  promotes itself as security-focused and designer friendly.
+```sh
+$ composer require bittyphp/view-latte
+```
+
 ### Mustache
 
-[Mustache](https://github.com/bobthecow/mustache.php) provides logic-less templates.
+[Mustache](https://github.com/bobthecow/mustache.php) provides logic-less templates and has rendering support in many different programming languages.
 
 ```sh
 $ composer require bittyphp/bitty-mustache
