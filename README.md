@@ -25,6 +25,7 @@ The following implementations are available. Pick and choose whichever one(s) yo
 - [Twig](https://github.com/bittyphp/view-twig)
 - [Latte](https://github.com/bittyphp/view-latte)
 - [Mustache](https://github.com/bittyphp/view-mustache)
+- [Plates](https://github.com/bittyphp/view-plates)
 
 ### Twig
 
@@ -46,4 +47,12 @@ $ composer require bittyphp/view-latte
 
 ```sh
 $ composer require bittyphp/view-mustache
+```
+
+### Plates
+
+[Plates](http://platesphp.com/) offers native PHP template support, for those people who prefer non-compiled template languages.
+
+```sh
+$ composer require bittyphp/view-plates
 ```
