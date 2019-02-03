@@ -13,7 +13,7 @@ class AbstractViewTest extends TestCase
     /**
      * @var AbstractView|MockObject
      */
-    protected $fixture = null;
+    private $fixture = null;
 
     protected function setUp(): void
     {
