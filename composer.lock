@@ -215,16 +215,16 @@
     "packages-dev": [
         {
             "name": "bizurkur/coding-standard",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bizurkur/coding-standard.git",
-                "reference": "42e2d4d39801118ce82d85d542011ec09cf05875"
+                "reference": "9452b166fb5faf849aad554889b8e57120b5af9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bizurkur/coding-standard/zipball/42e2d4d39801118ce82d85d542011ec09cf05875",
-                "reference": "42e2d4d39801118ce82d85d542011ec09cf05875",
+                "url": "https://api.github.com/repos/bizurkur/coding-standard/zipball/9452b166fb5faf849aad554889b8e57120b5af9e",
+                "reference": "9452b166fb5faf849aad554889b8e57120b5af9e",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 }
             ],
             "description": "Bizurkur coding standard.",
-            "time": "2019-02-10T20:49:51+00:00"
+            "time": "2019-02-10T21:08:28+00:00"
         },
         {
             "name": "codacy/coverage",
