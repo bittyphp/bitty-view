@@ -9,6 +9,11 @@
             "email": "bizurkur@gmail.com"
         }
     ],
+    "config": {
+        "platform": {
+            "php": "7.1.0"
+        }
+    },
     "require": {
         "php": ">=7.1.0",
         "bittyphp/http": "^2.0",
@@ -18,14 +23,14 @@
         "bizurkur/coding-standard": "^1.0",
         "codacy/coverage": "^1.4",
         "ergebnis/composer-normalize": "^2.2",
-        "infection/infection": "^0.14",
+        "infection/infection": "^0.11.0",
         "jakub-onderka/php-parallel-lint": "^1.0",
         "phing/phing": "^2.16",
-        "phpstan/phpstan": "^0.11",
-        "phpstan/phpstan-deprecation-rules": "^0.11",
-        "phpstan/phpstan-phpunit": "^0.11",
-        "phpstan/phpstan-strict-rules": "^0.11",
-        "phpunit/phpunit": "^8.0",
+        "phpstan/phpstan": "^0.11.0",
+        "phpstan/phpstan-deprecation-rules": "^0.11.0",
+        "phpstan/phpstan-phpunit": "^0.11.0",
+        "phpstan/phpstan-strict-rules": "^0.11.0",
+        "phpunit/phpunit": "^7.0",
         "squizlabs/php_codesniffer": "^3.0"
     },
     "autoload": {
