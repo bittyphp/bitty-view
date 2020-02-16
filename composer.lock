@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cfbacda6b9be15880f65bc6c3196453",
+    "content-hash": "209d543a2727243e5f8ab14e3d3adca5",
     "packages": [
         {
             "name": "bittyphp/collection",
@@ -4181,8 +4181,5 @@
     "platform": {
         "php": ">=7.1.0"
     },
-    "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.1.0"
-    }
+    "platform-dev": []
 }

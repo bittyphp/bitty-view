@@ -9,11 +9,6 @@
             "email": "bizurkur@gmail.com"
         }
     ],
-    "config": {
-        "platform": {
-            "php": "7.1.0"
-        }
-    },
     "require": {
         "php": ">=7.1.0",
         "bittyphp/http": "^2.0",
